@@ -1,6 +1,5 @@
-let text_list: string[] = []
-function initialiseLetters (letterList: any[]) {
-    text_list = [
+function initialiseLetters (letterList: string[][]) {
+    letterList.unshift([
     " ",
     "a",
     "b",
@@ -28,5 +27,6 @@ function initialiseLetters (letterList: any[]) {
     "x",
     "y",
     "z"
-    ]
+    ])
+    return letterList
 }
